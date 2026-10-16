@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shitikolak Ward, Tuli | Official Community Webpage</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emeraldCustom: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            600: '#059669',
+                            700: '#047857',
+                            800: '#065f46',
+                            900: '#064e3b',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts & FontAwesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(6, 78, 59, 0.92), rgba(15, 23, 42, 0.88)), url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+        }
+        .hover-lift {
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="antialiased text-slate-800 bg-slate-50 selection:bg-emerald-600 selection:text-white">
+
+    <nav class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center space-x-3 group">
+                    <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-emerald-800 to-emerald-600 flex items-center justify-center text-white font-bold text-xl shadow-md group-hover:scale-105 transition-transform">
+                        <i class="fa-solid font-bold text-emerald-300">S</i>
+                    </div>
+                    <div>
+                        <span class="text-xl font-bold tracking-tight text-slate-900 block leading-tight">SHITIKOLAK WARD</span>
+                        <span class="text-xs font-semibold tracking-wider text-emerald-700 uppercase">Tuli, Nagaland</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                    <a href="#about" class="text-slate-600 hover:text-emerald-700 transition-colors">About Ward</a>
+                    <a href="#landmarks" class="text-slate-600 hover:text-emerald-700 transition-colors">Landmarks</a>
+                    <a href="#gallery" class="text-slate-600 hover:text-emerald-700 transition-colors">Photo Gallery</a>
+                    <a href="#contact" class="px-5 py-2.5 rounded-lg bg-emerald-700 hover:bg-emerald-800 text-white font-medium shadow-md hover:shadow-lg transition-all duration-200">Contact Council</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 focus:outline-none">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
+            <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-emerald-50 hover:text-emerald-700">About Ward</a>
+            <a href="#landmarks" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-emerald-50 hover:text-emerald-700">Landmarks</a>
+            <a href="#gallery" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-emerald-50 hover:text-emerald-700">Photo Gallery</a>
+            <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium bg-emerald-700 text-white text-center shadow">Contact Council</a>
+        </div>
+    </nav>
+
+    <header class="hero-gradient text-white relative overflow-hidden py-20 sm:py-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center md:text-left">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-emerald-500/20 border border-emerald-400/30 text-emerald-300 text-xs sm:text-sm font-semibold tracking-wide uppercase mb-6 backdrop-blur-sm">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <span>Welcome to Our Progressive Colony</span>
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight mb-6">
+                    Shitikolak Ward, <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-teal-200 to-amber-300">Tuli</span>
+                </h1>
+                <p class="text-lg sm:text-xl text-slate-200 leading-relaxed font-light mb-8">
+                    A vibrant community rich in culture, natural beauty, and educational excellence. Home to premier schools, bustling community grounds, student hostels, and serene riverfronts.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#gallery" class="px-7 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold shadow-lg shadow-emerald-900/40 transition-all text-center flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-images"></i>
+                        <span>Explore Photo Gallery</span>
+                    </a>
+                    <button onclick="openManageModal()" class="px-7 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-semibold backdrop-blur-md border border-white/20 transition-all text-center flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-sliders"></i>
+                        <span>Manage Static Photos</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="relative z-20 -mt-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white rounded-2xl shadow-xl border border-slate-100 p-6 sm:p-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-100/80">
+                <div class="w-12 h-12 mx-auto mb-3 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-xl">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+                <div class="text-2xl sm:text-3xl font-extrabold text-slate-900">1,000+</div>
+                <div class="text-xs sm:text-sm font-medium text-slate-500 uppercase tracking-wider mt-1">Population</div>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-100/80">
+                <div class="w-12 h-12 mx-auto mb-3 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center text-xl">
+                    <i class="fa-solid fa-house-chimney"></i>
+                </div>
+                <div class="text-2xl sm:text-3xl font-extrabold text-slate-900">300+</div>
+                <div class="text-xs sm:text-sm font-medium text-slate-500 uppercase tracking-wider mt-1">Households</div>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-100/80">
+                <div class="w-12 h-12 mx-auto mb-3 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center text-xl">
+                    <i class="fa-solid fa-building-columns"></i>
+                </div>
+                <div class="text-2xl sm:text-3xl font-extrabold text-slate-900">4</div>
+                <div class="text-xs sm:text-sm font-medium text-slate-500 uppercase tracking-wider mt-1">Hostels</div>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-100/80">
+                <div class="w-12 h-12 mx-auto mb-3 rounded-full bg-teal-100 text-teal-700 flex items-center justify-center text-xl">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div class="text-2xl sm:text-3xl font-extrabold text-slate-900">2</div>
+                <div class="text-xs sm:text-sm font-medium text-slate-500 uppercase tracking-wider mt-1">Govt Schools</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="landmarks" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-emerald-700 font-semibold tracking-wider text-xs uppercase bg-emerald-100 px-3 py-1 rounded-full">Community Pillars</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mt-3 mb-4">Ward Highlights & Landmarks</h2>
+                <p class="text-slate-600 text-base sm:text-lg">Key landmarks and vibrant facilities that serve our community every day.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Landmark 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover-lift flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1529900748604-07564a03e7a6?auto=format&fit=crop&w=800&q=80" alt="Public Ground" class="w-full h-full object-cover">
+                        <span class="absolute top-4 left-4 bg-emerald-800/90 text-white text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-md">Sports & Events</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Public Ground</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                The center of ward activity, sports tournaments, cultural events, and youth games.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-100 text-xs text-emerald-700 font-medium">
+                            <i class="fa-solid fa-trophy mr-1.5"></i> Youth & Community Center
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Landmark 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover-lift flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=800&q=80" alt="GHSS TULI" class="w-full h-full object-cover">
+                        <span class="absolute top-4 left-4 bg-blue-800/90 text-white text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-md">Classes 6 to 12</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">GHSS TULI</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                Government Higher Secondary School Tuli offering secondary & higher secondary education.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-100 text-xs text-blue-700 font-medium">
+                            <i class="fa-solid fa-school mr-1.5"></i> High & Higher Secondary School
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Landmark 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover-lift flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80" alt="Middle School" class="w-full h-full object-cover">
+                        <span class="absolute top-4 left-4 bg-teal-800/90 text-white text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-md">Middle Education</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Government Middle School</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                Dedicated foundational learning and early secondary education for local children.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-100 text-xs text-teal-700 font-medium">
+                            <i class="fa-solid fa-book-open mr-1.5"></i> Primary & Middle Education
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Landmark 4 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover-lift flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1437482078695-73f5ca6c96e2?auto=format&fit=crop&w=800&q=80" alt="Fresh River" class="w-full h-full object-cover">
+                        <span class="absolute top-4 left-4 bg-sky-800/90 text-white text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-md">Natural Heritage</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Fresh Flowing River</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                A clean, refreshing river winding adjacent to the ward, creating picturesque natural views.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-100 text-xs text-sky-700 font-medium">
+                            <i class="fa-solid fa-water mr-1.5"></i> Scenic Riverfront
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Landmark 5 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover-lift flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=800&q=80" alt="Hostels" class="w-full h-full object-cover">
+                        <span class="absolute top-4 left-4 bg-indigo-800/90 text-white text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-md">4 Hostels</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Student Hostels</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                Accommodating students from all around, fostering a warm educational ecosystem.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-100 text-xs text-indigo-700 font-medium">
+                            <i class="fa-solid fa-bed mr-1.5"></i> Residential Student Accommodation
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Landmark 6 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover-lift flex flex-col">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" alt="Waiting Shed" class="w-full h-full object-cover">
+                        <span class="absolute top-4 left-4 bg-amber-800/90 text-white text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-md">Infrastructure</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Colony Waiting Shed</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                Convenient resting spot and gathering node for visitors and commuters in the ward.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-100 text-xs text-amber-700 font-medium">
+                            <i class="fa-solid fa-chair mr-1.5"></i> Community Shelter
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-20 bg-slate-100/70 border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-10">
+                <span class="text-emerald-700 font-semibold tracking-wider text-xs uppercase bg-emerald-100 px-3 py-1 rounded-full">Custom Photo Gallery</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mt-3 mb-4">Shitikolak Ward in Pictures</h2>
+                <p class="text-slate-600 text-base">You can easily update these images below with your own photos either in HTML or using the interactive Photo Manager.</p>
+            </div>
+
+            <!-- Management Controls Bar -->
+            <div class="bg-white rounded-2xl p-4 sm:p-5 shadow-sm border border-slate-200/80 mb-8 flex flex-col md:flex-row items-center justify-between gap-4">
+                <!-- Filters -->
+                <div class="flex flex-wrap gap-2 w-full md:w-auto" id="gallery-filters">
+                    <button data-filter="all" class="filter-btn active px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-emerald-700 text-white shadow-sm">All</button>
+                    <button data-filter="ground" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-slate-100 text-slate-600 hover:bg-slate-200">Public Ground</button>
+                    <button data-filter="education" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-slate-100 text-slate-600 hover:bg-slate-200">Schools & Hostels</button>
+                    <button data-filter="nature" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-slate-100 text-slate-600 hover:bg-slate-200">River & Nature</button>
+                    <button data-filter="infrastructure" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-slate-100 text-slate-600 hover:bg-slate-200">Infrastructure</button>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="flex items-center gap-2.5 w-full md:w-auto justify-end">
+                    <button onclick="toggleHelpBox()" class="px-3.5 py-2 rounded-xl text-xs font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 transition-colors flex items-center gap-1.5">
+                        <i class="fa-solid fa-book-open text-emerald-600"></i>
+                        <span>How to link local photos?</span>
+                    </button>
+                    <button onclick="openManageModal()" class="px-4 py-2 rounded-xl text-xs font-semibold text-white bg-emerald-700 hover:bg-emerald-800 transition-all shadow-md flex items-center gap-1.5">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        <span>Manage Static Photos</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Local Photos Instructions Banner -->
+            <div id="local-help-box" class="hidden mb-8 bg-slate-900 text-slate-100 p-6 rounded-2xl border border-slate-800 text-sm shadow-xl">
+                <div class="flex justify-between items-start mb-3">
+                    <h3 class="text-base font-bold text-emerald-400 flex items-center gap-2">
+                        <i class="fa-solid fa-folder-open"></i> How to link your local photos to this HTML file:
+                    </h3>
+                    <button onclick="toggleHelpBox()" class="text-slate-400 hover:text-white">
+                        <i class="fa-solid fa-xmark text-lg"></i>
+                    </button>
+                </div>
+                <div class="space-y-3 text-xs sm:text-sm text-slate-300">
+                    <p><strong>Option 1: Put your photos in the same folder as <code class="text-emerald-300 bg-slate-800 px-1 rounded">index.html</code></strong></p>
+                    <div class="bg-slate-950 p-3 rounded-xl border border-slate-800 font-mono text-xs text-amber-300 overflow-x-auto">
+                        📁 My_Colony_Folder/<br>
+                        &nbsp;&nbsp;├── 📄 index.html<br>
+                        &nbsp;&nbsp;├── 🖼️ ground.jpg<br>
+                        &nbsp;&nbsp;├── 🖼️ ghss_tuli.jpg<br>
+                        &nbsp;&nbsp;└── 🖼️ river.jpg
+                    </div>
+                    <p><strong>Option 2: Open this HTML file in Notepad / VSCode and edit photo paths directly:</strong></p>
+                    <p class="text-slate-400 text-xs">Search for <code class="text-emerald-400">&lt;!-- EDIT YOUR PHOTO URLS HERE --&gt;</code> in the source code and swap <code class="text-amber-300">src="images/your_photo.jpg"</code>.</p>
+                </div>
+            </div>
+
+            <!-- Gallery Grid with HTML Photo Placeholders -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="gallery-grid">
+                
+                <!-- EDIT YOUR PHOTO URLS HERE: Photo 1 -->
+                <div class="gallery-item group relative overflow-hidden rounded-2xl shadow-sm bg-white cursor-pointer" data-category="ground" data-id="1">
+                    <img id="gal-img-1" src="C:\Users\HP\Desktop\My Colony\1.jpeg" alt="Public Ground Activities" class="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-500" onclick="openLightbox(this.src, this.nextElementSibling.nextElementSibling.children[1].innerText)">
+                    <div class="absolute top-3 right-3 bg-slate-900/80 text-emerald-300 text-[10px] font-mono px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity">
+                        Photo #1
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white pointer-events-none">
+                        <span class="text-xs uppercase font-medium text-emerald-300 tracking-wider" id="gal-cat-1">Public Ground</span>
+                        <h4 class="font-bold text-sm mt-0.5" id="gal-title-1">Sports & Cultural Activities</h4>
+                    </div>
+                </div>
+
+                <!-- EDIT YOUR PHOTO URLS HERE: Photo 2 -->
+                <div class="gallery-item group relative overflow-hidden rounded-2xl shadow-sm bg-white cursor-pointer" data-category="education" data-id="2">
+                    <img id="gal-img-2" src="C:\Users\HP\Desktop\My Colony\8.jpeg" alt="GHSS Tuli" class="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-500" onclick="openLightbox(this.src, this.nextElementSibling.nextElementSibling.children[1].innerText)">
+                    <div class="absolute top-3 right-3 bg-slate-900/80 text-emerald-300 text-[10px] font-mono px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity">
+                        Photo #2
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white pointer-events-none">
+                        <span class="text-xs uppercase font-medium text-emerald-300 tracking-wider" id="gal-cat-2">Schools & Hostels</span>
+                        <h4 class="font-bold text-sm mt-0.5" id="gal-title-2">GHSS Tuli School Building</h4>
+                    </div>
+                </div>
+
+                <!-- EDIT YOUR PHOTO URLS HERE: Photo 3 -->
+                <div class="gallery-item group relative overflow-hidden rounded-2xl shadow-sm bg-white cursor-pointer" data-category="nature" data-id="3">
+                    <img id="gal-img-3" src="C:\Users\HP\Desktop\My Colony\11.jpeg" alt="Fresh River" class="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-500" onclick="openLightbox(this.src, this.nextElementSibling.nextElementSibling.children[1].innerText)">
+                    <div class="absolute top-3 right-3 bg-slate-900/80 text-emerald-300 text-[10px] font-mono px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity">
+                        Photo #3
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white pointer-events-none">
+                        <span class="text-xs uppercase font-medium text-emerald-300 tracking-wider" id="gal-cat-3">River & Nature</span>
+                        <h4 class="font-bold text-sm mt-0.5" id="gal-title-3">Scenic Fresh Water River</h4>
+                    </div>
+                </div>
+
+                <!-- EDIT YOUR PHOTO URLS HERE: Photo 4 -->
+                <div class="gallery-item group relative overflow-hidden rounded-2xl shadow-sm bg-white cursor-pointer" data-category="infrastructure" data-id="4">
+                    <img id="gal-img-4" src="C:\Users\HP\Desktop\My Colony\7.jpeg" alt="Waiting Shed" class="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-500" onclick="openLightbox(this.src, this.nextElementSibling.nextElementSibling.children[1].innerText)">
+                    <div class="absolute top-3 right-3 bg-slate-900/80 text-emerald-300 text-[10px] font-mono px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity">
+                        Photo #4
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white pointer-events-none">
+                        <span class="text-xs uppercase font-medium text-emerald-300 tracking-wider" id="gal-cat-4">Infrastructure</span>
+                        <h4 class="font-bold text-sm mt-0.5" id="gal-title-4">Community Waiting Shed</h4>
+                    </div>
+                </div>
+
+                <!-- EDIT YOUR PHOTO URLS HERE: Photo 5 -->
+                <div class="gallery-item group relative overflow-hidden rounded-2xl shadow-sm bg-white cursor-pointer" data-category="education" data-id="5">
+                    <img id="gal-img-5" src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=600&q=80" alt="Middle School" class="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-500" onclick="openLightbox(this.src, this.nextElementSibling.nextElementSibling.children[1].innerText)">
+                    <div class="absolute top-3 right-3 bg-slate-900/80 text-emerald-300 text-[10px] font-mono px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity">
+                        Photo #5
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white pointer-events-none">
+                        <span class="text-xs uppercase font-medium text-emerald-300 tracking-wider" id="gal-cat-5">Schools & Hostels</span>
+                        <h4 class="font-bold text-sm mt-0.5" id="gal-title-5">Government Middle School</h4>
+                    </div>
+                </div>
+
+                <!-- EDIT YOUR PHOTO URLS HERE: Photo 6 -->
+                <div class="gallery-item group relative overflow-hidden rounded-2xl shadow-sm bg-white cursor-pointer" data-category="education" data-id="6">
+                    <img id="gal-img-6" src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=600&q=80" alt="Hostels" class="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-500" onclick="openLightbox(this.src, this.nextElementSibling.nextElementSibling.children[1].innerText)">
+                    <div class="absolute top-3 right-3 bg-slate-900/80 text-emerald-300 text-[10px] font-mono px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity">
+                        Photo #6
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white pointer-events-none">
+                        <span class="text-xs uppercase font-medium text-emerald-300 tracking-wider" id="gal-cat-6">Schools & Hostels</span>
+                        <h4 class="font-bold text-sm mt-0.5" id="gal-title-6">Student Hostel Facilities</h4>
+                    </div>
+                </div>
+
+                <!-- EDIT YOUR PHOTO URLS HERE: Photo 7 -->
+                <div class="gallery-item group relative overflow-hidden rounded-2xl shadow-sm bg-white cursor-pointer" data-category="ground" data-id="7">
+                    <img id="gal-img-7" src="C:\Users\HP\Desktop\My Colony\3.jpeg" alt="Tournament" class="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-500" onclick="openLightbox(this.src, this.nextElementSibling.nextElementSibling.children[1].innerText)">
+                    <div class="absolute top-3 right-3 bg-slate-900/80 text-emerald-300 text-[10px] font-mono px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity">
+                        Photo #7
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white pointer-events-none">
+                        <span class="text-xs uppercase font-medium text-emerald-300 tracking-wider" id="gal-cat-7">Public Ground</span>
+                        <h4 class="font-bold text-sm mt-0.5" id="gal-title-7">Colony Tournament Celebrations</h4>
+                    </div>
+                </div>
+
+                <!-- EDIT YOUR PHOTO URLS HERE: Photo 8 -->
+                <div class="gallery-item group relative overflow-hidden rounded-2xl shadow-sm bg-white cursor-pointer" data-category="nature" data-id="8">
+                    <img id="gal-img-8" src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=600&q=80" alt="Valley Landscape" class="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-500" onclick="openLightbox(this.src, this.nextElementSibling.nextElementSibling.children[1].innerText)">
+                    <div class="absolute top-3 right-3 bg-slate-900/80 text-emerald-300 text-[10px] font-mono px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity">
+                        Photo #8
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white pointer-events-none">
+                        <span class="text-xs uppercase font-medium text-emerald-300 tracking-wider" id="gal-cat-8">River & Nature</span>
+                        <h4 class="font-bold text-sm mt-0.5" id="gal-title-8">Green Tuli Ward Landscape</h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-emerald-400 font-semibold tracking-wider text-xs uppercase bg-emerald-900/60 border border-emerald-700/50 px-3 py-1 rounded-full">Get In Touch</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold mt-4 mb-6">Shitikolak Ward Council</h2>
+                    <p class="text-slate-300 text-base leading-relaxed mb-8">
+                        Have queries, suggestions, or need information regarding ward services, schools, or hostel accommodations? Contact our ward committee directly.
+                    </p>
+                    <div class="space-y-4 text-sm text-slate-300">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-emerald-800/60 flex items-center justify-center text-emerald-400">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <span>Shitikolak Ward, Tuli Town, Nagaland</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-emerald-800/60 flex items-center justify-center text-emerald-400">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <span>shitikolakward.tuli@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800/90 p-8 rounded-2xl border border-slate-700">
+                    <h3 class="text-xl font-bold mb-4">Send a Message</h3>
+                    <form onsubmit="alert('Message sent to Ward Council!'); return false;" class="space-y-4">
+                        <div>
+                            <label class="block text-xs text-slate-400 mb-1">Your Name</label>
+                            <input type="text" required class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-sm focus:outline-none focus:border-emerald-500">
+                        </div>
+                        <div>
+                            <label class="block text-xs text-slate-400 mb-1">Message</label>
+                            <textarea rows="3" required class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-sm focus:outline-none focus:border-emerald-500"></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 font-semibold text-sm transition-colors shadow-lg">Submit Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full-Screen Lightbox Modal -->
+    <div id="lightbox" class="fixed inset-0 z-50 bg-slate-950/90 hidden items-center justify-center p-4 backdrop-blur-md">
+        <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white text-2xl hover:text-emerald-400 p-2">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="max-w-4xl w-full text-center">
+            <img id="lightbox-img" src="" alt="Enlarged view" class="max-h-[80vh] mx-auto rounded-xl shadow-2xl object-contain">
+            <p id="lightbox-caption" class="text-white text-base font-semibold mt-4"></p>
+        </div>
+    </div>
+
+    <!-- Photo Manager Control Panel Modal -->
+    <div id="manage-modal" class="fixed inset-0 z-50 bg-slate-950/80 hidden items-center justify-center p-4 backdrop-blur-sm">
+        <div class="bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] flex flex-col overflow-hidden">
+            <div class="p-5 border-b border-slate-200 flex justify-between items-center bg-slate-50">
+                <div>
+                    <h3 class="text-lg font-bold text-slate-900">Manage Static Gallery Photos</h3>
+                    <p class="text-xs text-slate-500">Swap image sources or titles dynamically for all 8 gallery slots.</p>
+                </div>
+                <button onclick="closeManageModal()" class="text-slate-400 hover:text-slate-700 text-xl font-bold">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- Form List -->
+            <div class="p-6 overflow-y-auto flex-1 space-y-6" id="photo-manager-list">
+                <!-- Javascript will generate controls for photos 1 to 8 -->
+            </div>
+
+            <div class="p-4 border-t border-slate-200 bg-slate-50 flex justify-between items-center">
+                <button onclick="resetGalleryToDefaults()" class="text-xs font-semibold text-rose-600 hover:underline">
+                    Reset to Default Images
+                </button>
+                <div class="flex gap-2">
+                    <button onclick="closeManageModal()" class="px-4 py-2 rounded-xl border border-slate-300 text-xs font-semibold text-slate-700 hover:bg-slate-100">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Gallery Filter Buttons
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-emerald-700', 'text-white', 'shadow-sm');
+                    b.classList.add('bg-slate-100', 'text-slate-600');
+                });
+                btn.classList.add('bg-emerald-700', 'text-white', 'shadow-sm');
+                btn.classList.remove('bg-slate-100', 'text-slate-600');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                galleryItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Lightbox Functions
+        function openLightbox(src, caption) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox-caption').textContent = caption;
+            document.getElementById('lightbox').classList.remove('hidden');
+            document.getElementById('lightbox').classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.add('hidden');
+            document.getElementById('lightbox').classList.remove('flex');
+            document.body.style.overflow = 'auto';
+        }
+
+        function toggleHelpBox() {
+            document.getElementById('local-help-box').classList.toggle('hidden');
+        }
+
+        // Photo Management Control Panel Logic
+        function openManageModal() {
+            renderManageList();
+            document.getElementById('manage-modal').classList.remove('hidden');
+            document.getElementById('manage-modal').classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeManageModal() {
+            document.getElementById('manage-modal').classList.add('hidden');
+            document.getElementById('manage-modal').classList.remove('flex');
+            document.body.style.overflow = 'auto';
+        }
+
+        function renderManageList() {
+            const list = document.getElementById('photo-manager-list');
+            list.innerHTML = '';
+
+            for (let i = 1; i <= 8; i++) {
+                const imgEl = document.getElementById(`gal-img-${i}`);
+                const titleEl = document.getElementById(`gal-title-${i}`);
+                const currentSrc = imgEl ? imgEl.src : '';
+                const currentTitle = titleEl ? titleEl.innerText : '';
+
+                const itemBox = document.createElement('div');
+                itemBox.className = 'p-4 rounded-xl border border-slate-200 bg-slate-50 flex flex-col gap-3';
+                itemBox.innerHTML = `
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-bold text-emerald-800 uppercase">Photo Slot #${i}</span>
+                        <span class="text-[11px] text-slate-400">Target ID: gal-img-${i}</span>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <div>
+                            <label class="block text-[11px] font-semibold text-slate-600 mb-1">Image Source (URL / Filename)</label>
+                            <input type="text" id="input-src-${i}" value="${currentSrc}" onchange="updatePhotoSlot(${i})" placeholder="e.g. images/photo${i}.jpg" class="w-full px-3 py-1.5 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-500 bg-white">
+                        </div>
+                        <div>
+                            <label class="block text-[11px] font-semibold text-slate-600 mb-1">Or Pick Local File</label>
+                            <input type="file" accept="image/*" onchange="handleFileSelect(event, ${i})" class="w-full text-xs text-slate-500 file:mr-2 file:py-1 file:px-3 file:rounded-md file:border-0 file:text-[11px] file:bg-emerald-100 file:text-emerald-800">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-[11px] font-semibold text-slate-600 mb-1">Caption / Title</label>
+                        <input type="text" id="input-title-${i}" value="${currentTitle}" onchange="updatePhotoSlot(${i})" class="w-full px-3 py-1.5 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-500 bg-white">
+                    </div>
+                `;
+                list.appendChild(itemBox);
+            }
+        }
+
+        function updatePhotoSlot(index) {
+            const newSrc = document.getElementById(`input-src-${index}`).value;
+            const newTitle = document.getElementById(`input-title-${index}`).value;
+
+            const imgEl = document.getElementById(`gal-img-${index}`);
+            const titleEl = document.getElementById(`gal-title-${index}`);
+
+            if (imgEl && newSrc) imgEl.src = newSrc;
+            if (titleEl && newTitle) titleEl.innerText = newTitle;
+
+            // Save to localStorage for persistence across reloads
+            saveGalleryToLocalStorage();
+        }
+
+        function handleFileSelect(event, index) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById(`input-src-${index}`).value = e.target.result;
+                    updatePhotoSlot(index);
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+
+        function saveGalleryToLocalStorage() {
+            const galleryData = [];
+            for (let i = 1; i <= 8; i++) {
+                galleryData.push({
+                    src: document.getElementById(`gal-img-${i}`)?.src || '',
+                    title: document.getElementById(`gal-title-${i}`)?.innerText || ''
+                });
+            }
+            localStorage.setItem('shitikolak_gallery_custom', JSON.stringify(galleryData));
+        }
+
+        function loadSavedGallery() {
+            const saved = localStorage.getItem('shitikolak_gallery_custom');
+            if (saved) {
+                try {
+                    const data = JSON.parse(saved);
+                    data.forEach((item, idx) => {
+                        const index = idx + 1;
+                        const imgEl = document.getElementById(`gal-img-${index}`);
+                        const titleEl = document.getElementById(`gal-title-${index}`);
+                        if (imgEl && item.src) imgEl.src = item.src;
+                        if (titleEl && item.title) titleEl.innerText = item.title;
+                    });
+                } catch(e) {
+                    console.error('Could not load custom gallery', e);
+                }
+            }
+        }
+
+        function resetGalleryToDefaults() {
+            localStorage.removeItem('shitikolak_gallery_custom');
+            location.reload();
+        }
+
+        // On Page Load
+        window.onload = function() {
+            loadSavedGallery();
+        };
+    </script>
+</body>
+</html>
